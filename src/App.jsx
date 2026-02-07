@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="min-h-screen relative">
       {/* Routes */}
-      <nav className="flex gap-6 mb-8 text-lg absolute top-1 left-4 z-10">
+      {/* <nav className="flex gap-6 mb-8 text-lg absolute top-1 left-4 z-10">
         <Link to="/" className="hover:text-yellow-400">
           Home
         </Link>
@@ -30,7 +30,7 @@ function App() {
         <Link to="/WithdraVerify" className="hover:text-yellow-400">
           WithdraVerify
         </Link>
-      </nav>
+      </nav> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />

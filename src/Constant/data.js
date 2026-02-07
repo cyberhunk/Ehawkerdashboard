@@ -1,19 +1,27 @@
-export const statsData = [
+
+
+
+// export const statsData = [
  
-  {
-    title: "Total Referrals",
-    value: "128",
-    sub: "Lifetime",
-  },
-  {
-    title: "Pending Withdrawals",
-    value: "₹3,400",
-  },
-  {
-    title: "Successful Withdrawals",
-    value: "₹41,800",
-  },
-];
+//   {
+//     title: "Pending For Withdrawal",
+//     value: "128",
+//     icon : <MdAccountBalanceWallet />
+//   },
+//   {
+//     title: "Total Users Referred",
+//     value: "₹3,400",
+//     icon : <BsPeopleFill />
+    
+//   },
+//   {
+//     title: "Training Completed By",
+//     value: "₹41,800",
+//     sub: "Lifetime",
+//     icon : <IoTrophy />
+
+//   },
+// ];
 
 export const earningHistory = [
   {

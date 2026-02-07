@@ -1,0 +1,61 @@
+.homedash {
+  background: #131313;
+  .cardbg {
+    background:
+      linear-gradient(0deg, rgba(19, 19, 19, 0.8), rgba(19, 19, 19, 0.8)),
+      linear-gradient(
+        46.94deg,
+        rgba(246, 246, 246, 0) 40.4%,
+        rgba(246, 246, 246, 0.2) 142.75%
+      );
+    border: 1px solid #f6f6f633;
+    box-shadow: 0px 4px 4px 0px #00000040;
+  }
+
+  .warningbtn {
+    background:
+      linear-gradient(0deg, #ee2326, #ee2326),
+      linear-gradient(
+        88.34deg,
+        rgba(255, 255, 255, 0) 64.74%,
+        rgba(255, 255, 255, 0.3) 99.73%
+      );
+  }
+
+  .copybtn {
+    font-size: 11px;
+  }
+  .sharebtn {
+    width: 71px;
+    font-size: 12px;
+    padding: 7px 12px;
+  }
+
+  .statcard {
+    width: 329px;
+    height: 111px;
+  }
+  .cardss {
+    width: 213px;
+    height: 111px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 22px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .homedash {
+    .cardss {
+      width: 48%;
+      padding: 15px;
+      height: 90px;
+      justify-content: space-evenly;
+
+      p {
+        font-size: 11px;
+      }
+    }
+  }
+}
