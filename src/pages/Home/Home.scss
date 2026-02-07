@@ -24,6 +24,8 @@
 
   .copybtn {
     font-size: 12px;
+    background: #f6f6f61a;
+    border: 1px solid #f6f6f633;
   }
   .sharebtn {
     background: #0077ff;
@@ -49,6 +51,9 @@
 
 @media (max-width: 480px) {
   .homedash {
+    .statcard {
+      width: 333px;
+    }
     .cardss {
       width: 48%;
       padding: 15px;

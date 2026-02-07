@@ -87,9 +87,9 @@ export default function Home() {
               )}
             </div>
 
-            <div className="flex items-center  rounded-xl mt-2 w-full backdrop-blur-md">
+            <div className="flex items-center  rounded-xl mt-2 w-[100%] backdrop-blur-md">
               {/* Link Box */}
-              <div className="flex items-center justify-between w-full  border border-white/10 bg-black/30  pl-2 p-[2px] rounded-lg text-sm text-gray-300">
+              <div className="flex items-center justify-between w-full  border border-white/10 bg-[#131313]  pl-2 p-[2px] rounded-lg text-sm text-gray-300">
                 <span className="text-[12px] whitespace-nowrap overflow-hidden">
                   {referralLink}
                 </span>
