@@ -13,6 +13,9 @@ import { IoTrophy } from "react-icons/io5";
 import logo from "../../assets/logo.png";
 
 export default function Home() {
+  const [showInfo, setShowInfo] = useState(false);
+  const [show, setShow] = useState(false);
+
   const statusStyles = {
     "Deposited to Bank": "bg-green-500/20 text-green-400",
     "Withdrawal Pending": "bg-yellow-500/20 text-yellow-400",
@@ -42,8 +45,18 @@ export default function Home() {
             <h1 className="text-4xl font-bold">Allu Arjun</h1>
             <p className="text-[#f4f4f4] mt-2 flex items-center gap-2">
               <span className="w-2 h-2 bg-green-400 rounded-full"></span>
-              You are now eligible for withdrawal <BsInfoCircleFill />
+              You are now eligible for withdrawal
+              <BsInfoCircleFill
+                onClick={() => setShowInfo(!showInfo)}
+                className="cursor-pointer  hover:text-blue-300 transition"
+              />
             </p>
+            {showInfo && (
+              <div className="absolute z-50 right-12 w-64 bg-zinc-900 border border-white/10 text-sm text-gray-300 p-3 rounded-xl shadow-xl">
+                Your are eligible for withdrawal once you complete 100% of
+                training.
+              </div>
+            )}
           </div>
 
           <button className="warningbtn w-full flex items-center items-end justify-center gap-2 my-4 ">
@@ -51,7 +64,7 @@ export default function Home() {
             <FiArrowUpRight className="text-base text-white " size={19} />
           </button>
 
-          <div className="cardbg px-4 py-4 mt-3 rounded-2xl w-[100%] sm: w-[335px] h-[111px] my-6 flex flex-col justify-center shadow-lg border border-white/5">
+          <div className="cardbg px-4 py-4 mt-3 rounded-2xl w-[95%] sm: w-[335px] h-[111px] my-6 flex flex-col justify-center shadow-lg border border-white/5">
             <div className="text-[16px] font-semibold flex justify-between">
               {" "}
               <span className="flex gap-1 items-center">
@@ -59,8 +72,19 @@ export default function Home() {
                 Earn Rs. 50 /-
               </span>
               <span>
-                <BsInfoCircleFill />
+                <BsInfoCircleFill
+                  onClick={() => setShow(!show)}
+                  className="cursor-pointer  hover:text-blue-300 transition"
+                />
               </span>
+              {show && (
+                <div className="absolute z-50 right-12 mt-4 w-64 bg-zinc-900 border border-white/10 text-sm text-gray-300 p-3 rounded-xl shadow-xl">
+                  After sharing, your gig worker friend must sign up on the
+                  portal and complete 100% of the training using the link you
+                  provided. Only then will you be eligible for the ₹50 reward
+                  points.
+                </div>
+              )}
             </div>
 
             <div className="flex items-center  rounded-xl mt-2 w-full backdrop-blur-md">
