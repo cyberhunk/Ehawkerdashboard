@@ -5,7 +5,7 @@ import { PiUploadSimpleBold } from "react-icons/pi";
 export default function WithdrawVerify() {
   return (
     <div
-      className="min-h-screen bg-cover bg-center flex items-center justify-center px-4"
+      className="min-h-screen p-2.5  border-5 bg-cover bg-center flex items-center justify-center px-4"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className="w-full form max-w-md backdrop-blur-xl border border-white/10 rounded-[28px] p-9 text-white">

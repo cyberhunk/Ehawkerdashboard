@@ -6,7 +6,7 @@ import logo from "../../assets/logo.png";
 export default function OtpVerification() {
   return (
     <div
-      className="min-h-screen bg-cover bg-center relative  flex items-center justify-center"
+      className="min-h-screen p-2.5 bg-cover bg-center relative  flex items-center justify-center"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div class="w-full form  max-w-md  backdrop-blur-xl border border-white/10 rounded-3xl  p-9  text-white">

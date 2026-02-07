@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="min-h-screen relative">
       {/* Routes */}
-      {/* <nav className="flex gap-6 mb-8 text-lg absolute top-1 left-4 z-10">
+      {/* <nav className="flex gap-6 mb-8 text-lg z-10">
         <Link to="/" className="hover:text-yellow-400">
           Home
         </Link>
@@ -21,7 +21,7 @@ function App() {
         <Link to="/otp" className="hover:text-yellow-400">
           OtpVerification
         </Link>
-        <Link to="/Withdra" className="hover:text-yellow-400">
+        <Link to="/withdrawal" className="hover:text-yellow-400">
           WithdrawalCenter
         </Link>
         <Link to="/success" className="hover:text-yellow-400">
@@ -35,7 +35,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/otp" element={<OtpVerification />} />
-        <Route path="/withdra" element={<WithdrawalCenter />} />
+        <Route path="/withdrawal" element={<WithdrawalCenter />} />
         <Route path="/success" element={<WithdrawalSuccess />} />
         <Route path="/withdraverify" element={<WithdraVerify />} />
       </Routes>

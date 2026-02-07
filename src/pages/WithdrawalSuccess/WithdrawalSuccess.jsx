@@ -4,7 +4,7 @@ import bgImage from "../../assets/img.png";
 export default function WithdrawalSuccess() {
   return (
     <div
-      className="min-h-screen bg-cover bg-center relative  flex items-center justify-center"
+      className="min-h-screen bg-cover bg-center p-2.5 relative  flex items-center justify-center"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
    

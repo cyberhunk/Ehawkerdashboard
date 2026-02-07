@@ -12,9 +12,12 @@ import { BsPeopleFill } from "react-icons/bs";
 import { IoTrophy } from "react-icons/io5";
 import logo from "../../assets/logo.png";
 
+import { useNavigate } from "react-router-dom";
+
 export default function Home() {
   const [showInfo, setShowInfo] = useState(false);
   const [show, setShow] = useState(false);
+  const navigate = useNavigate();
 
   const statusStyles = {
     "Deposited to Bank": "bg-green-500/20 text-green-400",
@@ -139,7 +142,7 @@ export default function Home() {
           </div>
           <div className="cardss cardbg ">
             <p className="text-[#F6F6F6] text-sm">Total Users Referred</p>
-            <div className="flex items-end gap-2">
+            <div className="flex items-center gap-2">
               <BsPeopleFill size={28} />
               <div className="flex items-end gap-3">
                 <h2 className="text-3xl font-bold ">44</h2>
@@ -148,25 +151,40 @@ export default function Home() {
           </div>
           <div className="cardss cardbg ">
             <p className="text-[#F6F6F6] text-sm">Training Completed By</p>
-            <div className="flex items-end gap-3">
-              <IoTrophy size={25} />
+            <div className="flex items-center gap-3">
+              <IoTrophy size={28} />
               <div className="flex items-end gap-2">
                 <h2 className="text-3xl font-bold ">44</h2>
               </div>
             </div>
           </div>
-          <div className="cardss cardbg ">
+          <div
+            className="cardss cardbg cursor-pointer"
+            onClick={() =>
+              document
+                .getElementById("earningHistory")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+          >
             <p className="text-[#F6F6F6] text-sm">Earning History</p>
-            <div className="">
-              <a href="v#" className="flex items-end gap-2">
+            <div className="text-blue-600">
+              <span className="flex items-center gap-2">
                 view
-                <FiArrowUpRight size={15} />
-              </a>
+                <FiArrowUpRight size={15} className="mt-1" />
+              </span>
             </div>
           </div>
 
-          <div className="statcard bg-gradient-to-r from-blue-600 to-blue-400 p-6 rounded-2xl w-full  shadow-lg">
-            <h3 className="text-xl font-semibold">Withdrawal</h3>
+          <div
+            onClick={() => navigate("/withdrawal")}
+            className="statcard bg-gradient-to-r from-blue-600 to-blue-400 p-7 rounded-2xl w-full shadow-lg cursor-pointer hover:scale-[1.02] transition"
+          >
+            <h3 className="text-xl font-semibold flex justify-between">
+              Withdrawal
+              <span>
+                <FiArrowUpRight size={28} />
+              </span>
+            </h3>
             <p className="text-sm mt-1 text-blue-100">
               Withdraw the amount you have earned directly to your bank account
               through UPI.
@@ -176,7 +194,7 @@ export default function Home() {
       </div>
 
       {/* Earning History Table */}
-      <div className="mt-12">
+      <div className="mt-12" id="earningHistory">
         <h2 className="text-lg font-semibold mb-4 flex gap-2 items-center">
           <FaHistory /> Your Earning History
         </h2>
