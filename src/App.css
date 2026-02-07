@@ -21,3 +21,12 @@
   box-shadow: 0px 4px 4px 0px #00000040;
   z-index: -1;
 }
+
+label{
+  color: #F6F6F6;
+
+}
+input::placeholder{
+  color:  #F6F6F699;
+
+}

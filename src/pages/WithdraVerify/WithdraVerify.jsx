@@ -5,7 +5,7 @@ import { PiUploadSimpleBold } from "react-icons/pi";
 export default function WithdrawVerify() {
   return (
     <div
-      className="min-h-screen p-2.5  border-5 bg-cover bg-center flex items-center justify-center px-4"
+      className="min-h-screen p-2.5   bg-cover bg-center flex items-center justify-center px-4"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className="w-full form max-w-md backdrop-blur-xl border border-white/10 rounded-[28px] p-9 text-white">
@@ -23,17 +23,17 @@ export default function WithdrawVerify() {
         <div>
           <div>
             <label className="text-[12px] pl-1" htmlFor="govId">
-              Aadhaar Card / PAN
+              Driving License (PNG/JPG/JPEG)
             </label>
 
             <label
               htmlFor="govId"
               className="relative mt-1 mb-4 flex items-center justify-between bg-black/10 border border-white/10 rounded-lg px-4 py-2 text-sm text-gray-400 cursor-pointer hover:border-blue-500"
             >
-              <span>Upload your government ID</span>
+              <span className="text-[#f6f6f699]">Upload your Driving License</span>
               <PiUploadSimpleBold className="text-xl" />
 
-              <input id="govId" type="file" className="hidden" />
+              <input id="govId" type="file" className="hidden placeholder:text-[#F6F6F699]" />
             </label>
           </div>
 

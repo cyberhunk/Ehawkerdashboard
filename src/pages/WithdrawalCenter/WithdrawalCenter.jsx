@@ -13,30 +13,34 @@ export default function WithdrawalCenter() {
         </div>
 
         <h1 class="text-3xl font-semibold text-center mb-2">
-          Management Portal
+          Withdrawal Center
         </h1>
         <p class="text-center text-gray-400 text-sm mb-8">
-          Welcome to the official management portal of
-          <br />
-          Surakshit Saathi Training Program
+          Withdraw your money directly into your bank account just by entering
+          your UPI ID
         </p>
 
+        <label htmlFor="">Enter Your UPI ID</label>
         <input
           type="tel"
           placeholder="Enter your mobile number"
-          class="w-full bg-black/10 border border-white/10 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none rounded-lg px-4 py-2 text-sm placeholder-gray-400 mb-4"
+          class="w-full bg-black/10 mt-2 border border-white/10 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none rounded-lg px-4 py-2 text-sm placeholder-gray-400 mb-4"
         />
 
-        <label class="flex items-start  gap-2 text-xs text-gray-400 mb-5">
+        {/* <label class="flex items-start  gap-2 text-xs text-gray-400 mb-5">
           <input type="checkbox" class="mt-0.5 accent-blue-500" />
           <span className="mt-0.5 text-[10px]">
             I agree to share my number and details for OTP verification.
           </span>
-        </label>
+        </label> */}
 
         <button class="w-full bg-gradient-to-r from-blue-600 to-blue-400 hover:opacity-90 transition rounded-lg  font-medium">
-          Request for OTP
+          Withdrawal
         </button>
+
+        <div className="mt-4 text-center">
+          <p className="text-xs">*Your money will be deposited within 48 hours</p>
+        </div>
       </div>
     </div>
   );
