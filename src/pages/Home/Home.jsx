@@ -368,6 +368,24 @@ export default function Home() {
     setTimeout(() => setCopied(false), 2000);
   };
 
+  const handleShare = async () => {
+    try {
+      if (navigator.share) {
+        await navigator.share({
+          title: "Join using my referral link",
+          text: "Hey! Use my referral link to join 👇",
+          url: referralLink,
+        });
+      } else {
+        // Fallback — agar browser support na kare
+        await navigator.clipboard.writeText(referralLink);
+        alert("Link copied! Now you can paste and share anywhere.");
+      }
+    } catch (error) {
+      console.error("Error sharing:", error);
+    }
+  };
+
   return (
     <>
       {/* Top Bar */}
@@ -444,7 +462,10 @@ export default function Home() {
                   </button>
                 </div>
 
-                <button className="sharebtn ml-1 flex items-center gap-1 bg-blue-600 hover:bg-blue-500 text-white text-sm px-4 rounded-lg transition">
+                <button
+                  onClick={handleShare}
+                  className="sharebtn ml-1 flex items-center gap-1 bg-blue-600 hover:bg-blue-500 text-white text-sm px-4 rounded-lg transition"
+                >
                   <FiShare2 size={12} />
                   Share
                 </button>
