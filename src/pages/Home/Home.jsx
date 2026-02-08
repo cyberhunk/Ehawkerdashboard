@@ -62,10 +62,9 @@ export default function Home() {
         </div>
       </div>
       <div className="homedash min-h-screen bg-[#131313] text-white px-8 py-8">
-        {/* <EarningsDashboard /> */}
-
+      
         {/* Welcome Section */}
-        <div className="flex  justify-between flex-col sm:flex-row">
+        <div className="flex  justify-between flex-col sm:flex-row ">
           <div className="">
             <div className="relative">
               <h2 className="text-blue-400 text-lg">Welcome</h2>
@@ -91,7 +90,7 @@ export default function Home() {
               <FiArrowUpRight className="text-base text-white " size={19} />
             </button>
 
-            <div className="cardbg px-4 py-4 mt-3 rounded-2xl w-[95%] sm: w-[335px] h-[111px] my-6 flex flex-col justify-center shadow-lg border border-white/5">
+            <div className="cardbg px-4 py-4 mt-3 rounded-2xl w-[100%]  sm:w-[335px] h-[111px] my-6 flex flex-col justify-center shadow-lg border border-white/5">
               <div className="text-[16px] font-semibold flex justify-between">
                 {" "}
                 <span className="flex gap-1 items-center">
@@ -140,9 +139,9 @@ export default function Home() {
           </div>
 
           {/* Stats Cards */}
-          <div className="flex items-end justify-center sm:justify-end  flex-wrap gap-2">
-            <div className="flex flex-col sm:flex-row gap-5">
-              <div className="cardbg statcard relative z-10 flex items-center gap-10 bg-[linear-gradient(0deg,rgba(19,19,19,0.8),rgba(19,19,19,0.8)),linear-gradient(46.94deg,rgba(246,246,246,0)_40.4%,rgba(246,246,246,0.2)_142.75%)] border border-white/5 p-6 rounded-2xl w-full lg:w-96 shadow-lg">
+          <div className="flex items-end justify-center sm:justify-end  flex-wrap gap-3">
+         
+              <div className="cardbg statcard relative z-10 flex items-center gap-10  p-6   shadow-lg">
                 <img src={hand} alt="" className="object-cover h-10" />
                 <div>
                   <h3 className="text-[16px] font-semibold">
@@ -151,7 +150,7 @@ export default function Home() {
                   <h2 className="font-bold text-3xl">RS. 5300</h2>
                 </div>
               </div>
-            </div>
+          
 
             <div className="cardss cardbg ">
               <p className="text-[#F6F6F6] text-sm">Pending For Withdrawal</p>
