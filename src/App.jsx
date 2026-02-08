@@ -7,6 +7,7 @@ import WithdrawalSuccess from "./pages/WithdrawalSuccess/WithdrawalSuccess";
 import WithdraVerify from "./pages/WithdraVerify/WithdraVerify";
 import Home from "./pages/Home/Home";
 import OnboardingForm from "./pages/OnboardingForm/OnboardingForm";
+import WithdrawalStatus from "./pages/WithdrawalStatus/WithdrawalStatus";
 
 function App() {
   return (
@@ -36,7 +37,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/otp" element={<OtpVerification />} />
-        <Route path="/withdrawal" element={<WithdrawalCenter />} />
+        <Route path="/withdrawalcenter" element={<WithdrawalCenter />} />
+        <Route path="/withdrawalstatus" element={<WithdrawalStatus />} />
         <Route path="/success" element={<WithdrawalSuccess />} />
         <Route path="/withdraverify" element={<WithdraVerify />} />
         <Route path="/onboardingform" element={<OnboardingForm />} />
