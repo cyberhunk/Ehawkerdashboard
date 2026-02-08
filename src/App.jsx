@@ -9,9 +9,9 @@ import Home from "./pages/Home/Home";
 
 function App() {
   return (
-    <div className="min-h-screen relative">
+    <div className="min-h-screen relative bg-[#131313]">
       {/* Routes */}
-      <nav className="flex gap-6 mb-8 text-lg z-10">
+      {/* <nav className="flex gap-6 mb-8 text-lg z-10">
         <Link to="/" className="hover:text-yellow-400">
           Home
         </Link>
@@ -30,7 +30,7 @@ function App() {
         <Link to="/WithdraVerify" className="hover:text-yellow-400">
           WithdraVerify
         </Link>
-      </nav>
+      </nav> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
