@@ -6,6 +6,7 @@ import WithdrawalCenter from "./pages/WithdrawalCenter/WithdrawalCenter";
 import WithdrawalSuccess from "./pages/WithdrawalSuccess/WithdrawalSuccess";
 import WithdraVerify from "./pages/WithdraVerify/WithdraVerify";
 import Home from "./pages/Home/Home";
+import OnboardingForm from "./pages/OnboardingForm/OnboardingForm";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         <Route path="/withdrawal" element={<WithdrawalCenter />} />
         <Route path="/success" element={<WithdrawalSuccess />} />
         <Route path="/withdraverify" element={<WithdraVerify />} />
+        <Route path="/onboardingform" element={<OnboardingForm />} />
       </Routes>
     </div>
   );

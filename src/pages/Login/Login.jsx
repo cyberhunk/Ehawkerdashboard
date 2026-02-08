@@ -1,4 +1,3 @@
-
 import bgImage from "../../assets/img.png";
 import logo from "../../assets/logo.png";
 
@@ -38,6 +37,15 @@ export default function Login() {
         <button class="w-full bg-gradient-to-r from-blue-600 to-blue-400 hover:opacity-90 transition rounded-lg  font-medium">
           Request for OTP
         </button>
+        <p className="text-[12px] text-center text-gray-400 mt-4">
+          Don’t have an account?{" "}
+          <a
+            href="/onboardingform"
+            className="text-blue-500 hover:text-blue-400 font-medium"
+          >
+            Sign up
+          </a>
+        </p>
       </div>
     </div>
   );
