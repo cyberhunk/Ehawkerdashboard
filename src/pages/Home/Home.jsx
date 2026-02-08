@@ -42,7 +42,7 @@ export default function Home() {
       <div className="py-5 px-8 flex flex-col sm:flex-row gap-3 justify-between items-start border-b border-b-[#F6F6F633] ">
         <img src={logo} alt="" className="h-6 object-cover " />
         <div>
-          <p className="flex items-center gap-2 flex-wrap text-sm">
+          <p className="flex items-center text-[#f6f6f6] gap-2 flex-wrap text-sm">
             <span>
               <span className="text-blue-500 font-semibold">RS.</span> 3500
             </span>
