@@ -5,10 +5,12 @@ import { earningHistory } from "../../Constant/data";
 import { FaHistory } from "react-icons/fa";
 import hand from "../../assets/hand.png";
 import star from "../../assets/star.png";
+import people from "../../assets/people.png";
+import vallet from "../../assets/vallet.png";
 import "./Home.scss";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { MdAccountBalanceWallet } from "react-icons/md";
-import { BsPeopleFill } from "react-icons/bs";
+// import { BsPeopleFill } from "react-icons/bs";
 import { IoTrophy } from "react-icons/io5";
 import logo from "../../assets/logo.png";
 
@@ -65,7 +67,7 @@ export default function Home() {
         {/* Welcome Section */}
         <div className="flex  justify-between flex-col sm:flex-row">
           <div className="">
-            <div>
+            <div className="relative">
               <h2 className="text-blue-400 text-lg">Welcome</h2>
               <h1 className="text-4xl font-bold">Allu Arjun</h1>
               <p className="text-[#f4f4f4] mt-2 flex items-center gap-2">
@@ -73,7 +75,7 @@ export default function Home() {
                 You are now eligible for withdrawal
                 <BsInfoCircleFill
                   onClick={() => setShowInfo(!showInfo)}
-                  className="cursor-pointer  hover:text-blue-300 transition"
+                  className="cursor-pointer  hover:text-blue-300 transition relative"
                 />
               </p>
               {showInfo && (
@@ -103,7 +105,7 @@ export default function Home() {
                   />
                 </span>
                 {show && (
-                  <div className="absolute z-50 right-12 mt-4 w-64 bg-zinc-900 border border-white/10 text-sm text-gray-300 p-3 rounded-xl shadow-xl">
+                  <div className="absolute z-50 right-6 mt-4 w-64 bg-zinc-900 border border-white/10 text-sm text-gray-300 p-3 rounded-xl shadow-xl">
                     After sharing, your gig worker friend must sign up on the
                     portal and complete 100% of the training using the link you
                     provided. Only then will you be eligible for the ₹50 reward
@@ -140,7 +142,7 @@ export default function Home() {
           {/* Stats Cards */}
           <div className="flex items-end justify-center sm:justify-end  flex-wrap gap-2">
             <div className="flex flex-col sm:flex-row gap-5">
-              <div className="cardbg statcard flex items-center gap-10 bg-[linear-gradient(0deg,rgba(19,19,19,0.8),rgba(19,19,19,0.8)),linear-gradient(46.94deg,rgba(246,246,246,0)_40.4%,rgba(246,246,246,0.2)_142.75%)] border border-white/5 p-6 rounded-2xl w-full lg:w-96 shadow-lg">
+              <div className="cardbg statcard relative z-10 flex items-center gap-10 bg-[linear-gradient(0deg,rgba(19,19,19,0.8),rgba(19,19,19,0.8)),linear-gradient(46.94deg,rgba(246,246,246,0)_40.4%,rgba(246,246,246,0.2)_142.75%)] border border-white/5 p-6 rounded-2xl w-full lg:w-96 shadow-lg">
                 <img src={hand} alt="" className="object-cover h-10" />
                 <div>
                   <h3 className="text-[16px] font-semibold">
@@ -154,7 +156,7 @@ export default function Home() {
             <div className="cardss cardbg ">
               <p className="text-[#F6F6F6] text-sm">Pending For Withdrawal</p>
               <div className="flex items-center gap-4 ">
-                <MdAccountBalanceWallet size={30} />
+                <img src={vallet} alt="" className="h-7" />
                 <div className="flex items-end gap-3">
                   <h2 className="text-3xl font-bold ">
                     <span className="text-[10px]">RS.</span> 244
@@ -165,7 +167,8 @@ export default function Home() {
             <div className="cardss cardbg ">
               <p className="text-[#F6F6F6] text-sm">Total Users Referred</p>
               <div className="flex items-center gap-2">
-                <BsPeopleFill size={28} />
+                {/* <BsPeopleFill size={28} /> */}
+                <img src={people} alt="" className="h-8.5" />
                 <div className="flex items-end gap-3">
                   <h2 className="text-3xl font-bold ">44</h2>
                 </div>
@@ -199,7 +202,7 @@ export default function Home() {
 
             <div
               onClick={() => navigate("/withdrawal")}
-              className="statcard bg-gradient-to-r from-blue-600 to-blue-400 p-7 rounded-2xl w-full shadow-lg cursor-pointer hover:scale-[1.02] transition"
+              className="bg-gradient-to-r from-blue-600 to-blue-400 p-7 rounded-2xl w-[329px] h-full sm:h-[111px] shadow-lg cursor-pointer hover:scale-[1.02] transition"
             >
               <h3 className="text-xl font-semibold flex justify-between">
                 Withdrawal
