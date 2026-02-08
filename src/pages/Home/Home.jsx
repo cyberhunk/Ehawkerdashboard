@@ -104,7 +104,7 @@ export default function Home() {
                   />
                 </span>
                 {show && (
-                  <div className="absolute z-50 right-6 mt-4 w-64 bg-zinc-900 border border-white/10 text-sm text-gray-300 p-3 rounded-xl shadow-xl">
+                  <div className="absolute z-50 right-9 top-[-100%] mt-4 w-75 bg-zinc-900 border border-white/10 text-sm text-gray-300 p-3 rounded-xl shadow-xl">
                     After sharing, your gig worker friend must sign up on the
                     portal and complete 100% of the training using the link you
                     provided. Only then will you be eligible for the ₹50 reward
